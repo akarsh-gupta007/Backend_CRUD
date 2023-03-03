@@ -8,7 +8,7 @@ connection.on("open", () => {
 app.use(express.json())
 const alienRouter=require('./router/userdetails')
 
-app.use("/api/data",alienRouter)
+app.use("/",alienRouter)
 
 app.listen(9000,()=>{
     console.log("server started")
