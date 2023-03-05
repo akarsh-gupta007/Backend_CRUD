@@ -33,9 +33,6 @@ router.post('/api', async (req, res) => {
     }
 })
 
-
-
-
 router.patch('/update/:id', async (req, res) => {
     try {
         const updatedata = await projectmodel.findByIdAndUpdate(req.params.id, req.body);
